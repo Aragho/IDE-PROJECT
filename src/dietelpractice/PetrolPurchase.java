@@ -1,4 +1,4 @@
-package petroleum;
+package dietelpractice;
 
 public class PetrolPurchase {
     private String location;

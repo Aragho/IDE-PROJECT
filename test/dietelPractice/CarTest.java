@@ -1,24 +1,28 @@
-package carmodel;
+package dietelPractice;
 
+import dietelpractice.Car;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 public class CarTest {
+    Car car;
+    @BeforeEach
+    public void setUp() {
+        car = new Car("toyota", "1998", 20_000 );
+    }
     @Test
     public void testThatTheCarFunctionality(){
-        Car car = new Car("toyota", "1998", 20_000 );
         assertEquals("toyota", car.getModel());
         assertEquals("1998", car.getYear());
         assertEquals(20_000, car.getPrice());
     }
     @Test
     public void testThatThePriceIsPositive(){
-        Car car = new Car("toyota", "1998", 20_000 );
         assertEquals(20_000, car.getPrice());
     }
     @Test
     public void testThatThePriceIsNegative(){
-        Car car = new Car("toyota", "1998", 20_000 );
         assertEquals(20_000, car.getPrice());
         car.setPrice(-10_000);
         assertEquals(0, car.getPrice());

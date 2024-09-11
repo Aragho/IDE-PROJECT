@@ -1,16 +1,17 @@
-package modifiedAccount;
+package dietelPractice;
 
+import dietelpractice.Car;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class ModifiedAccountOneTest {
-    ModifiedAccount account;
+    Car.ModifiedAccount account;
 
     @BeforeEach
     public void setUp() {
-        account = new ModifiedAccount("Adenike", "Adetoro", 2222);
+        account = new Car.ModifiedAccount("Adenike", "Adetoro", 2222);
 
     }
 
@@ -23,7 +24,7 @@ public class ModifiedAccountOneTest {
     @Test
     public void testToCreateTwoAccounts() {
         assertEquals("Adenike Adetoro", account.getName());
-        ModifiedAccount account2 = new ModifiedAccount("omodara", "ayodele", 1234);
+        Car.ModifiedAccount account2 = new Car.ModifiedAccount("omodara", "ayodele", 1234);
         assertEquals("omodara ayodele", account2.getName());
         assertEquals(2, account.countAccountsCreated());
     }

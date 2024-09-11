@@ -1,4 +1,4 @@
-package petroleum;
+package dietelpractice;
 
 import java.util.Scanner;
 
