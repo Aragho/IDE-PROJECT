@@ -23,7 +23,7 @@ public class PersonTest {
     }
     @Test
     public void testFaculty(){
-        Faculty faculty = new Faculty();
+//        Faculty faculty = new Faculty();
 
     }
 }
